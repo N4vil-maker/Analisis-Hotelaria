@@ -39,5 +39,5 @@ Para garantir uma análise rigorosa e sem distorções, realizei as seguintes ta
 ---
 
 ## 📁 Como visualizar
-1. O ficheiro original do Power BI está disponível como **`Relatorio_Performance_Hotelaria.pbix`**.
+1. O ficheiro original do Power BI está disponível como **`Relatorio_Performance_Hotelaria.pbix`**
 2. O notebook com a limpeza inicial está na pasta de scripts.

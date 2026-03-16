@@ -1,25 +1,43 @@
-# Projeto de Consumo e Sazonlnalidade Hoteleira #Work in Progress
+# 📊 Projeto: Análise de Consumo e Sazonalidade Hoteleira
 
-Fase de limpeza de dados e EDA concluída; próximos passos: visualização
-Este projeto analisa os padrões de reservas e receitas de dois hotéis (City e Resort), com foco na limpeza de dados, segmentação e detecção de outliers
+## 🚀 Status: Fase de Visualização e Dashboards Concluída
+Este projeto analisa os padrões de reservas e receitas de dois hotéis (City e Resort), cobrindo todo o ciclo de dados: desde a limpeza e EDA (Exploratory Data Analysis) em Python até a criação de dashboards executivos no Power BI.
 
-#Processamento e Limpeza de Dados
-Para garantir uma análise rigorosa, realizei as seguintes tarefas de preparação de dados
+---
 
-Filtragem de ADR: Removi registros com tarifas incorretas (menores que 0 ou maiores que 1000) para evitar distorções na média.
-Integridade dos hóspedes: Criei uma coluna para a soma total de hóspedes (adultos, crianças e bebês). Identifiquei e invalidei reservas com valores zero (0).
-Métricas de receita (Business Intelligence): Criei uma nova coluna ‘df_revenue’ multiplicando ‘adr’ por ‘total_nights’. Considerei apenas reservas com data de check-out.
+## 🖥️ Dashboard Final (Power BI)
+![Dashboard de Performance](./Dashboard_Final.png)
 
-#Principais conclusões (insights)
+> **Destaque do Dashboard:** > - **Visualização:** Utilizei uma paleta **Azul Petróleo** para manter a sobriedade executiva e facilitar a leitura dos KPIs.
+> - **Interatividade:** Implementação de filtros dinâmicos por tipo de hotel e gráficos de barras empilhadas para análise de mix de receita.
+> - **UX Design:** Aplicação de hierarquia visual para destacar o Faturamento Total e o Volume de Reservas.
 
-Perfil do cliente: De acordo com os quartis (25%, 50%, 75%), o perfil predominante é o de casais (2 adultos) sem filhos.
-Sazonalidade: A receita atinge seu pico em agosto, embora julho apresente uma alta densidade de pernoites.
-Detecção de outliers: Identifiquei uma reserva atípica de um hóspede italiano (ITA) com um ADR de US$ 510, um valor muito superior à média de US$ 103,48, mesmo para uma categoria de quarto padrão (A).
+---
 
-#Visualização (Próximos passos)
-Utilizei Seaborn e Matplotlib para representar:
-Lineplot: Tendência de receita mensal (ordenada cronologicamente de janeiro a dezembro através de categorias).
-Barplot: Ranking de receita por país de origem (Top 10) segmentado por tipo de hotel.
+## 🧹 Processamento e Limpeza de Dados (Back-end)
+Para garantir uma análise rigorosa e sem distorções, realizei as seguintes tarefas:
 
-#Próximos Passos
-Finalizar a integração dos dados limpos no Power BI para criação de dashboards dinâmicos.
+1.  **Filtragem de ADR:** Remoção de registros com tarifas incorretas (menores que 0 ou maiores que 1000).
+2.  **Integridade dos Hóspedes:** Criação de coluna para soma total (adultos + crianças + bebês) e eliminação de registros com valor zero.
+3.  **Métricas de Receita (BI):** Criação da coluna `df_revenue` (`adr` * `total_nights`), considerando apenas reservas com check-out concluído.
+
+---
+
+## 💡 Principais Insights e Conclusões
+
+* **Perfil do Cliente:** Predomínio de casais (2 adultos) sem filhos (baseado na análise de quartis).
+* **Sazonalidade Crítica:** A receita atinge o seu **pico absoluto em agosto**, sugerindo a necessidade de reforço de staff e gestão de inventário neste período.
+* **Detecção de Outliers:** Identificação de reserva atípica (ITA) com ADR de $510, muito acima da média de $103,48.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+* **Python:** Pandas, Seaborn e Matplotlib (Limpeza e EDA).
+* **Power BI Service:** Construção de Dashboards interativos e modelagem de dados.
+* **Linguagem DAX:** Para métricas calculadas de faturamento e volume.
+
+---
+
+## 📁 Como visualizar
+1. O ficheiro original do Power BI está disponível como **`Relatorio_Performance_Hotelaria.pbix`**.
+2. O notebook com a limpeza inicial está na pasta de scripts.

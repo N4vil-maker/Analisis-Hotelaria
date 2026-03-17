@@ -41,3 +41,5 @@ Para garantir uma análise rigorosa e sem distorções, realizei as seguintes ta
 ## 📁 Como visualizar
 1. O ficheiro original do Power BI está disponível como **`Relatorio_Performance_Hotelaria.pbix`**
 2. O notebook com a limpeza inicial está na pasta de scripts.
+3. Faz click aqui para ver o Dashboard Interativo!
+4. https://app.powerbi.com/view?r=eyJrIjoiMjVlOWJmOGUtMDhhMy00NGMzLWFmYjYtMzQ0ODU2MGZkNDRkIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9&embedImagePlaceholder=true&pageName=5223545745a218163aa1
